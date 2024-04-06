@@ -1,0 +1,43 @@
+/* WEBSITE COLOUR SCHEME */
+/* 
+#393D3F - onyx 
+#FDFDFF - off-white
+#C6C5B9 - silver
+#62929E - blue (munsell)
+#546A7B - payne's gray
+
+
+*/
+
+:root {
+    --primary: #62929E;
+    --primary-hover: #546a7b;
+    --secondary: #C6C5B9;
+    --light: #FDFDFF;
+    --dark: #393D3F;
+}
+
+/* HERO SECTION */
+
+/* overrides bootstrap blue background */
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+
+/* TEXT */
+
+.section-title, .text-primary {
+    color: var(--primary) !important;
+}
+
+/* BUTTONS */
+
+.btn-primary {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover) !important;
+    border-color: var(--primary-hover) !important;
+}
