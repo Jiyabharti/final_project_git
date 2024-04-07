@@ -11,10 +11,20 @@
 
 :root {
     --primary: #62929E;
-    --primary-hover: #546a7b;
-    --secondary: #C6C5B9;
+    --secondary: #546a7b;
+    --tertiary: #C6C5B9;
     --light: #FDFDFF;
     --dark: #393D3F;
+}
+
+/* NAVIGATION */
+
+.navbar-nav .nav-link {
+    color: var(--secondary) !important;
+}
+
+.navbar-light {
+    background-color: var(--light) !important;
 }
 
 /* HERO SECTION */
@@ -23,6 +33,76 @@
 .bg-primary {
     background-color: var(--primary) !important;
 }
+
+.hero-section h1, .hero-section p {
+    color: var(--light);
+}
+
+
+/* SECTION 3(?) */
+
+.section-item h5, p {
+    color: var(--dark);
+}
+
+.section-item {
+    box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
+}
+
+.section-item:hover {
+    background: var(--primary);
+}
+
+.section-item:hover * {
+    color: var(--light) !important;
+}
+
+/* FAQ accordion */
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--primary); 
+    color: var(--light);
+    box-shadow: none;
+}
+
+.accordion-button:hover {
+    background-color: var(--secondary);
+    color: var(--light);
+}
+
+/* FOOTER SECTION */
+
+.footer, .footer p {
+    background-color: var(--secondary);
+    color: var(--light);
+}
+
+.footer .btn.btn-social {
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light);
+    border: 1px solid var(--light);
+    border-radius: 40px;
+    transition: 0.5s;
+}
+
+.footer .btn.btn-social:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.footer .btn.btn-link {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    padding: 0;
+    color: var(--light);
+}
+
 
 /* TEXT */
 
@@ -33,11 +113,20 @@
 /* BUTTONS */
 
 .btn-primary {
-    background-color: var(--primary) !important;
+    background-color: var(--tertiary) !important;
     border-color: var(--primary) !important;
+    color: var(--secondary)
 }
 
 .btn-primary:hover {
-    background-color: var(--primary-hover) !important;
-    border-color: var(--primary-hover) !important;
+    background-color: var(--primary) !important;
+    border-color: var(--secondary) !important;
 }
+
+
+/* INPUT FIELDS */
+
+.border-primary {
+    border-color: var(--primary) !important;
+}
+
