@@ -41,7 +41,16 @@
             <a class="nav-link" href="/education">Education</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="/wellness">Wellness</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="/wellness" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Wellness <!-- Change dropdown title to "Wellness" -->
+                </a>
+                <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="/wellness">Wellness</a></li> <!-- Main wellness page -->
+                    <li><hr class="dropdown-divider"></li> <!-- Divider -->
+                    <li><a class="dropdown-item" href="/parent_wellness">Parent Wellness</a></li> <!-- Parent wellness page -->
+                    <li><a class="dropdown-item" href="/child_wellness">Child Wellness</a></li> <!-- Child wellness page -->
+                </ul>
             </li>
             <li class="nav-item">
             <a class="nav-link" href="/health">Health</a>
@@ -56,10 +65,6 @@
               </ul>
             </li>
         </ul>
-        <!-- <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-        </form> -->
         </div>
     </div>
 </nav>
