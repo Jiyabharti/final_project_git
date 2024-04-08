@@ -53,7 +53,16 @@
                 </ul>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="/health">Health</a>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="/health" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Health <!-- Change dropdown title to "Health" -->
+                </a>
+                <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="/health">Health</a></li> <!-- Main Health page -->
+                    <li><hr class="dropdown-divider"></li> <!-- Divider -->
+                    <li><a class="dropdown-item" href="/parent_health">Parent/Guardian </a></li>
+                    <li><a class="dropdown-item" href="/child_health">Children</a></li>
+                </ul>
             </li>
             <li class="nav-item dropdown pe-5">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
