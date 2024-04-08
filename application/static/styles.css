@@ -27,6 +27,11 @@
     background-color: var(--light) !important;
 }
 
+/* I cant get code below to work???? */
+.navbar-nav .dropdown-menu.custom-dropdown-menu {
+    width: 10px !important; /* changes width of dropdown menu as extends off screen */
+}
+
 /* HERO SECTION */
 
 /* overrides bootstrap blue background */
@@ -115,12 +120,13 @@
 .btn-primary {
     background-color: var(--tertiary) !important;
     border-color: var(--primary) !important;
-    color: var(--secondary)
+    color: var(--secondary) !important;
 }
 
 .btn-primary:hover {
     background-color: var(--primary) !important;
     border-color: var(--secondary) !important;
+    color: var(--light) !important;
 }
 
 
@@ -128,5 +134,33 @@
 
 .border-primary {
     border-color: var(--primary) !important;
+}
+
+.section-form {
+    box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
+    border: 2px solid var(--secondary);
+}
+
+/* FORM FIELDS */
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 8px; /* give height to text box, space around text input */
+  margin-bottom: 16px;
+  border: 2px solid var(--primary);
+  border-radius: 4px; /* round the borders */
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  background-color: #FF006E; /* rose colour */
+  color: #FFF; /* white */
+}
+
+input[type="submit"]:hover {
+  background-color: #3A86FF /* changes to azure colour on hover */
 }
 

@@ -5,7 +5,46 @@
         <div class="text-center">
             <h1 class="section-title mb-4">{{title}}</h1>
         </div>
-        <div></div>
+        <div class="d-flex align-items-center justify-content-center py-4">
+            <div class="col-lg-6 col-md-8 col-sm-12 mx-auto">
+                <div class="section-form rounded p-5">
+                    <form action="" method="POST">
+                        <div>
+                            <label for="firstname">First Name:</label>
+                            <input type="text" id="firstname" name="firstname" required>
+                        </div>
+                        <div>
+                            <label for="lastname">Last Name:</label>
+                            <input type="text" id="lastname" name="lastname" required>
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+    <!--                If we decide to add password later -->
+    <!--                <div>-->
+    <!--                    <label for="password">Password:</label><br>-->
+    <!--                    <input type="password" id="password" name="password" required><br>-->
+    <!--                </div>-->
+                        <div class="pt-3">
+                            <input type="radio" id="volunteer" name="options" value="volunteer">
+                            <label for="volunteer"> I am a volunteer</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="user" name="options" value="user">
+                            <label for="user"> I am a user</label>
+                        </div>
+                        <div class="py-3">
+                            <input type="checkbox" id="subscribe" name="subscribe">
+                            <label for="subscribe">Subscribe to our newsletter</label>
+                        </div>
+                        <div>
+                            <input class="btn btn-primary rounded-pill py-2 px-4" type="submit" value="Register">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 {% endblock %}
