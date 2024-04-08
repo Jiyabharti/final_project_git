@@ -29,6 +29,16 @@ def health():
     return render_template('5_health.html', title='Health Support')
 
 
+@app.route('/parent_health')
+def parent_wellness():
+    return render_template('10_parent_health.html', title='Health Support Information for your child')
+
+
+@app.route('/child_health')
+def child_wellness():
+    return render_template('11_child_health.html', title='Children Health Support')
+
+
 @app.route('/login')
 def login():
     return render_template('6_login.html', title='User Log In')
