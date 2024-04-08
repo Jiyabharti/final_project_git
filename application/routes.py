@@ -24,6 +24,16 @@ def wellness():
     return render_template('4_wellness.html', title='Wellness Support')
 
 
+@app.route('/parent_wellness')
+def parent_wellness():
+    return render_template('8_wellness.html', title='Wellness Support Info for your child')
+
+
+@app.route('/child_wellness')
+def child_wellness():
+    return render_template('9_wellness.html', title='Children Wellness Support')
+
+
 @app.route('/health')
 def health():
     return render_template('5_health.html', title='Health Support')
