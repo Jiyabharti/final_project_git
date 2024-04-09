@@ -45,8 +45,9 @@ def wellness():
 
 
 @app.route('/parent_wellness')
-def parent_wellness_route():
-    return render_template('8_wellness.html', title='Wellness Support Info for your child')
+def parent_wellness():
+    return render_template('4a_parentwellness.html', title='Wellness Support Information for your child')
+
 
 
 @app.route('/child_wellness')
