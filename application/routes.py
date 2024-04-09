@@ -25,18 +25,28 @@ def wellness():
 
 
 @app.route('/parent_wellness')
-def parent_wellness():
+def parent_wellness_route():
     return render_template('8_wellness.html', title='Wellness Support Info for your child')
 
 
 @app.route('/child_wellness')
-def child_wellness():
+def child_wellness_route():
     return render_template('9_wellness.html', title='Children Wellness Support')
 
 
 @app.route('/health')
 def health():
     return render_template('5_health.html', title='Health Support')
+
+
+@app.route('/parent_health')
+def parent_health_route():
+    return render_template('10_parent_health.html', title='Health Support Information for your child')
+
+
+@app.route('/child_health')
+def child_health_route():
+    return render_template('11_child_health.html', title='Children Health Support')
 
 
 @app.route('/login')
