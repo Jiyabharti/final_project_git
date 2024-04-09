@@ -19,6 +19,13 @@
 
 /* NAVIGATION */
 
+.elevated-navbar {
+    background-color: white; /* Set background color */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Apply box-shadow */
+    position: relative; /* Set position to relative */
+    z-index: 1000; /* Set a high z-index to bring it to the front */
+}
+
 .navbar-nav .nav-link {
     color: var(--secondary) !important;
 }
@@ -30,6 +37,18 @@
 /* I cant get code below to work???? */
 .navbar-nav .dropdown-menu.custom-dropdown-menu {
     width: 10px !important; /* changes width of dropdown menu as extends off screen */
+}
+
+/* Custom styling for dropdown menus */
+.nav-item-dropdown {
+    position: relative;
+    z-index: 1000; /* Set a high z-index to bring it to the front */
+}
+
+/* Optional: Add styling to dropdown menu items */
+.custom-dropdown-menu {
+    background-color: white; /* Set background color */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Apply box-shadow */
 }
 
 /* HERO SECTION */
@@ -191,4 +210,21 @@ input[type="submit"]:hover {
   .wave-container::before {
     height: 37px; /* Adjusted height for smaller screens */
   }
+}
+
+/* For Parent Health section CSS */
+
+/* Custom styling for the section */
+.custom-section {
+    background-color: #f8f9fa; /* Background color */
+    padding: 20px; /* Padding */
+    border-radius: 10px; /* Border radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow */
+    margin-bottom: 30px; /* Margin bottom */
+}
+
+/* Style the h2 within the section */
+.custom-section h2 {
+    color: #333; /* Text color */
+    margin-bottom: 20px; /* Margin bottom */
 }

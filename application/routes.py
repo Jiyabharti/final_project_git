@@ -31,7 +31,7 @@ def education():
 
 @app.route('/parent_education')
 def parent_education():
-    return render_template('14_parent_education.html', title='Parent Education Support')
+    return render_template('3a_parenteducation.html', title='Parent Education Support')
 
 
 @app.route('/child_education')
@@ -62,7 +62,7 @@ def health():
 
 @app.route('/parent_health')
 def parent_health_route():
-    return render_template('10_parent_health.html', title='Health Support Information for your child')
+    return render_template('5a_parenthealth.html', title='Health Support Information for your child')
 
 
 @app.route('/child_health')
