@@ -14,9 +14,29 @@ def about():
     return render_template('2_about.html', title="About Us")
 
 
+@app.route('/child_dashboard')
+def child_dashboard():
+    return render_template('13_child_dashboard.html', title='Child Dashboard')
+
+
+@app.route('/parent_dashboard')
+def parent_dashboard():
+    return render_template('12_parent_dashboard.html', title='Parent/Guardian Dashboard')
+
+
 @app.route('/education')
 def education():
     return render_template('3_education.html', title='Education Support')
+
+
+@app.route('/parent_education')
+def parent_education():
+    return render_template('14_parent_education.html', title='Parent Education Support')
+
+
+@app.route('/child_education')
+def child_education():
+    return render_template('15_child_education.html', title='Child Education Support')
 
 
 @app.route('/wellness')
@@ -47,6 +67,16 @@ def parent_health_route():
 @app.route('/child_health')
 def child_health_route():
     return render_template('11_child_health.html', title='Children Health Support')
+
+
+@app.route('/volunteer')
+def volunteer():
+    return render_template('16_volunteer.html', title='Volunteer With Us')
+
+
+@app.route('/parent_volunteer_search')
+def parent_volunteer_search():
+    return render_template('17_parent_volunteer_search.html', title='Find Volunteers')
 
 
 @app.route('/login')
