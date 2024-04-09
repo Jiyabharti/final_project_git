@@ -183,6 +183,14 @@ input[type="submit"]:hover {
   background-color: #3A86FF /* changes to azure colour on hover */
 }
 
+ /* CSS to remove blue underline */
+ a {
+        text-decoration: none; /* Remove underline */
+    }
+
+
+
+
 /* For Parent wellness section CSS */
 
 /* wave container for mental health */
@@ -227,4 +235,33 @@ input[type="submit"]:hover {
 .custom-section h2 {
     color: #333; /* Text color */
     margin-bottom: 20px; /* Margin bottom */
+}
+/* Custom styling for the section */
+.custom-section {
+    background-color: #f8f9fa; /* Background color */
+    padding: 20px; /* Padding */
+    border-radius: 10px; /* Border radius */
+    margin-bottom: 30px; /* Margin bottom */
+}
+
+/* Style the h2 within the section */
+.custom-section h2 {
+    color: #333; /* Text color */
+    margin-bottom: 20px; /* Margin bottom */
+}
+
+/* Custom styling for elevated cards */
+.elevated-card {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Apply box-shadow */
+    border-radius: 10px; /* Border radius */
+    margin-bottom: 10px; /* Margin bottom */
+}
+
+.sticky-nav {
+    background-color: white; /* Set background color */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Apply box-shadow */
+    z-index: 1000; /* Set a high z-index to bring it to the front */
+    justify-content: center; /* Align content to the center horizontally */
+    display: flex; /* Use flexbox to enable alignment */
+    align-items: center; /* Align items vertically */
 }

@@ -21,7 +21,7 @@ def child_dashboard():
 
 @app.route('/parent_dashboard')
 def parent_dashboard():
-    return render_template('12_parent_dashboard.html', title='Parent/Guardian Dashboard')
+    return render_template('12_parent_dashboard.html', title='Dashboard')
 
 
 @app.route('/education')
