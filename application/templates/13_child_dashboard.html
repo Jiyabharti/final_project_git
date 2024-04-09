@@ -1,5 +1,20 @@
 {% extends "layout.html" %}
 {% block body_content %}
+<!--<div class="container-xxl py-4">-->
+<!--    <div class="container">-->
+<!--        <div class="text-center">-->
+<!--            <h1 class="section-title mb-4">{{title}}</h1>-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <div class="container py-4" id="faq">-->
+<!--    <div class="text-center">-->
+<!--        <h1 class="section-title mb-4 text-primary"> </h1>-->
+<!--    </div>-->
+
+<!--    </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 <div class="container-xxl py-4">
     <div class="container">
         <div class="text-center">
@@ -7,12 +22,35 @@
         </div>
         <div>
             <div class="container py-4" id="faq">
-    <div class="text-center">
-        <h1 class="section-title mb-4 text-primary"> </h1>
-    </div>
+                <div class="text-center">
+                    <h1 class="section-title mb-4 text-primary"></h1>
+                </div>
 
-    </div>
+                <!-- Child Dashboard Content -->
+                <div class="health-fun-fact bg-success text-white p-4 mb-4">
+                    <h2>Health Fun Fact of the Day</h2>
+                    <p>Replace this text with your fun fact</p>
+                </div>
+
+                <div class="mood-monsters bg-light p-4 mb-4">
+                    <h2>Mood Monsters</h2>
+                    <div class="monster-container">
+                        <a href="happy.html"><img src="static/happy_monster.jpg" alt="Happy Monster"></a>
+                        <a href="sad.html"><img src="static/sad_monster.jpg" alt="Sad Monster"></a>
+                        <a href="angry.html"><img src="static/angry_monster.jpg" alt="Angry Monster"></a>
+                        <a href="worried.html"><img src="static/worried_monster.jpg" alt="Worried Monster"></a>
+                    </div>
+                </div>
+
+                <div class="daily-challenge bg-info text-white p-4">
+                    <h2>Daily Challenge</h2>
+                    <p>Replace this text with your daily challenge</p>
+                    <button onclick="startTimer()">Toothbrush Timer</button>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+
+
 {% endblock %}
