@@ -2,14 +2,26 @@
 {% block body_content %}
   <!-- home/hero section -->
 <div class="container-fluid hero-section bg-primary py-2 mb-2">
-    <div class="container py-5">
-        <div class="row justify-content-center py-5">
-            <div class="col-lg-10 text-center">
-                <h1 class="display-1 mb-3">Hero section ..........</h1>
-                <p class="fs-3 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum doloribus minima soluta unde molestiae, fuga iusto beatae facere magnam esse quos consequatur aspernatur reprehenderit temporibus.</p>
+<div class="row justify-content-center py-5">
+    <!-- Box for Parent Dashboard -->
+    <div class="col-lg-5 text-center">
+        <a href="/parent_dashboard" class="text-decoration-none">
+            <div class="card p-3 shadow">
+                <h2 class="display-4 mb-3">Parent Dashboard</h2>
+                <p class="fs-5 mb-0">View your child's progress, set goals, and access resources.</p>
             </div>
-        </div>
+        </a>
     </div>
+    <!-- Box for Child Dashboard -->
+    <div class="col-lg-5 text-center">
+        <a href="/child_dashboard" class="text-decoration-none">
+            <div class="card p-3 shadow">
+                <h2 class="display-4 mb-3">Child Dashboard</h2>
+                <p class="fs-5 mb-0">Explore fun activities, learn, and track your progress.</p>
+            </div>
+        </a>
+    </div>
+</div>
 </div>
 <!-- about section -->
 <div class="container-xxl py-4" id="about">
@@ -21,10 +33,13 @@
             </div>
             </div>
                 <div class="col-lg-6">
-                <h1 class="section-title mb-4 text-primary text-center">Section Example</h1>
-                <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam ipsam itaque minima quia fuga veniam perspiciatis veritatis nihil provident nostrum!</p>
-                <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam ipsam itaque minima quia fuga veniam perspiciatis veritatis nihil provident nostrum!</p>
-                <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam ipsam itaque minima quia fuga veniam perspiciatis veritatis nihil provident nostrum!</p>
+                <h1 class="section-title mb-4 text-primary text-center">What we do</h1>
+                <p class="mb-4">At "," we are dedicated to empower children to express themselves. Our goal is to foster
+                    a love for learning while nurturing healthy habits and routines that support not only academic success
+                    but also emotional well-being. Through engaging educational content and personalised guidance, we
+                    aim to uplift children's moods, cultivate resilience, and create a positive environment where they
+                    can flourish and succeed. With the support of parents and caregivers, we strive to inspire confidence,
+                    curiosity, and happiness in every child we reach.</p>
                 <div class="row mb-4">
                     <div class="col-sm-6">
                         <p class="mb-0"><i class="fa-solid fa-heart text-primary me-2"></i>point or link 1</p>
@@ -91,33 +106,37 @@
         </div>
         <div class="row g-3">
             <div class="col-lg-4 col-sm-12">
+                <a href="/volunteer">
                 <div class="section-item rounded pt-3">
                     <div class="p-4">
                         <i class="fa fa-3x fa-solid fa-handshake-angle text-primary mb-4"></i>
-                        <h5>Volunteers</h5>
+                        <h5>Volunteer with us</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit sapiente temporibus adipisci!</p>
                     </div>
                 </div>
+                </a>
             </div>
             <div class="col-lg-4 col-sm-12">
-                <a href="/parent_dashboard">
+                <a href="/register">
                     <div class="section-item rounded pt-3">
                         <div class="p-4">
                             <i class="fa fa-3x fa-solid fa-hands-holding-child text-primary mb-4"></i>
-                            <h5>Parents</h5>
+                            <h5>Parents Register </h5>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit sapiente temporibus adipisci!</p>
                         </div>
                     </div>
                 </a>
             </div>
             <div class="col-lg-4 col-sm-12">
+            <a href="/register">
                 <div class="section-item rounded pt-3">
                     <div class="p-4">
                         <i class="fa fa-3x fa-solid fa-child text-primary mb-4"></i>
-                        <h5>Kids</h5>
+                        <h5>Kids Register</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit sapiente temporibus adipisci!</p>
                     </div>
                 </div>
+            </a>
             </div>
         </div>
     </div>

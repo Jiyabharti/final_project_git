@@ -224,7 +224,7 @@ input[type="submit"]:hover {
 
 /* Custom styling for the section */
 .custom-section {
-    background-color: #f8f9fa; /* Background color */
+    background-color: #b3dff7; /* Background color */
     padding: 20px; /* Padding */
     border-radius: 10px; /* Border radius */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow */
@@ -236,19 +236,7 @@ input[type="submit"]:hover {
     color: #333; /* Text color */
     margin-bottom: 20px; /* Margin bottom */
 }
-/* Custom styling for the section */
-.custom-section {
-    background-color: #f8f9fa; /* Background color */
-    padding: 20px; /* Padding */
-    border-radius: 10px; /* Border radius */
-    margin-bottom: 30px; /* Margin bottom */
-}
 
-/* Style the h2 within the section */
-.custom-section h2 {
-    color: #333; /* Text color */
-    margin-bottom: 20px; /* Margin bottom */
-}
 
 /* Custom styling for elevated cards */
 .elevated-card {
@@ -265,3 +253,20 @@ input[type="submit"]:hover {
     display: flex; /* Use flexbox to enable alignment */
     align-items: center; /* Align items vertically */
 }
+
+
+    .row {
+        display: flex;
+    }
+
+    .column {
+        flex: 50%;
+        padding: 0 15px;
+    }
+
+    /* Clear floats after the columns */
+    .column::after {
+        content: "";
+        display: table;
+        clear: both;
+    }

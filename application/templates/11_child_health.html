@@ -1,6 +1,93 @@
 {% extends "layout.html" %}
+
 {% block body_content %}
-<div class="container-xxl py-4">
-    <h1 class="section-title mb-4">{{title}}</h1>
+<div class="container py-4" id="health">
+    <div class="text-center">
+        <h1 class="section-title mb-4">{{title}}</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-1">
+            <button class="btn btn-primary" id="prevBtn"><</button>
+        </div>
+        <div class="col-10">
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-body">
+                        <h2>Physical Health</h2>
+                        <div>
+                            <p>
+                                Ensuring physical health in children is vital for their overall well-being and development. As parents, you play a crucial role in promoting their physical activity and ensuring they lead a healthy lifestyle.
+                            </p>
+                            <!-- Add the content of the first section here -->
+                        </div>
+                        <div>
+                            <p>For more information, you can visit:</p>
+                            <ul>
+                                <li><a href="https://kidshealth.org/en/parents/exercise.html" target="_blank">Kids and Exercise</a></li>
+                                <li><a href="https://www.nhs.uk/live-well/exercise/physical-activity-guidelines-children-under-five-years/" target="_blank">Physical activity guidelines for children (under 5 years)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Repeat the above card structure for each section -->
+
+            </div>
+        </div>
+        <div class="col-1">
+            <button class="btn btn-primary" id="nextBtn">></button>
+        </div>
+    </div>
 </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script>
+  $(document).ready(function(){
+    // Define variables to keep track of the current slide
+    var currentSlide = 0;
+    var totalSlides = $(".card").length;
+
+    // Hide the "Previous" button initially
+    $("#prevBtn").hide();
+
+    // Function to show the next slide
+    function showNextSlide() {
+      if (currentSlide < totalSlides - 1) {
+        $(".card").eq(currentSlide).hide();
+        $(".card").eq(currentSlide + 1).show();
+        currentSlide++;
+        $("#prevBtn").show();
+        // Hide the "Next" button if it's the last slide
+        if (currentSlide === totalSlides - 1) {
+          $("#nextBtn").hide();
+        }
+      }
+    }
+
+    // Function to show the previous slide
+    function showPrevSlide() {
+      if (currentSlide > 0) {
+        $(".card").eq(currentSlide).hide();
+        $(".card").eq(currentSlide - 1).show();
+        currentSlide--;
+        $("#nextBtn").show();
+        // Hide the "Previous" button if it's the first slide
+        if (currentSlide === 0) {
+          $("#prevBtn").hide();
+        }
+      }
+    }
+
+    // Event listener for the "Next" button
+    $("#nextBtn").click(function(){
+      showNextSlide();
+    });
+
+    // Event listener for the "Previous" button
+    $("#prevBtn").click(function(){
+      showPrevSlide();
+    });
+  });
+</script>
 {% endblock %}
